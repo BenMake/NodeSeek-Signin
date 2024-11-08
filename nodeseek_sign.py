@@ -71,7 +71,7 @@ if COOKIE_ENV:
         response_data = response.json()
         print(response_data)
         print(COOKIE_ENV)
-        message = response_data.get('message')
+        message = "👾nodeseek签到：" + response_data.get('message')
         success = response_data.get('success')
         send("nodeseek签到", message)
         if success == "true":
